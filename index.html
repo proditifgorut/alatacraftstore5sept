@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alatacraft - Kerajinan Eceng Gondok Berkualitas</title>
+    
+    <meta name="description" content="Alatacraft menyediakan kerajinan tangan berkualitas tinggi dari eceng gondok. Tas anyam, keranjang, dan produk ramah lingkungan lainnya dengan desain modern dan tradisional.">
+    <meta name="author" content="Alatacraft">
+    
+    <meta property="og:title" content="Alatacraft - Kerajinan Eceng Gondok Berkualitas">
+    <meta property="og:description" content="Alatacraft menyediakan kerajinan tangan berkualitas tinggi dari eceng gondok. Tas anyam, keranjang, dan produk ramah lingkungan lainnya dengan desain modern dan tradisional.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1200&h=630&fit=crop">
+    <meta property="og:image:alt" content="Produk kerajinan eceng gondok Alatacraft">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alatacraft - Kerajinan Eceng Gondok Berkualitas">
+    <meta name="twitter:description" content="Alatacraft menyediakan kerajinan tangan berkualitas tinggi dari eceng gondok. Tas anyam, keranjang, dan produk ramah lingkungan lainnya dengan desain modern dan tradisional.">
+    <meta name="twitter:site" content="@alatacraft">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1200&h=630&fit=crop">
+    
+    <link rel="canonical" href="https://alatacraft.com">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Alatacraft",
+      "url": "https://alatacraft.com",
+      "description": "Alatacraft menyediakan kerajinan tangan berkualitas tinggi dari eceng gondok",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Alatacraft"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1>🌿 Alatacraft</h1>
+                </div>
+                <div class="header__search">
+                    <input type="text" placeholder="Cari produk..." id="searchInput">
+                    <button class="search__btn" id="searchBtn">🔍</button>
+                </div>
+                <nav class="header__nav">
+                    <a href="#beranda" class="nav__link active">Beranda</a>
+                    <a href="#produk" class="nav__link">Produk</a>
+                    <a href="#tentang" class="nav__link">Tentang Kami</a>
+                    <a href="#kontak" class="nav__link">Kontak</a>
+                </nav>
+                <div class="header__actions">
+                    <div class="header__wishlist" id="wishlistIcon">
+                        <span class="wishlist__icon">💝</span>
+                        <span class="wishlist__count" id="wishlistCount">0</span>
+                    </div>
+                    <div class="header__cart" id="cartIcon">
+                        <span class="cart__icon">🛒</span>
+                        <span class="cart__count" id="cartCount">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <div class="container">
+            <div class="hero__content">
+                <h2 class="hero__title">Kerajinan Eceng Gondok Berkualitas Tinggi</h2>
+                <p class="hero__subtitle">Produk ramah lingkungan dengan sentuhan tradisional dan desain modern</p>
+                <a href="#produk" class="hero__cta">Lihat Koleksi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="produk">
+        <div class="container">
+            <div class="products__header">
+                <h2 class="section__title">Koleksi Produk Kami</h2>
+                <div class="products__controls">
+                    <div class="filter__group">
+                        <select id="categoryFilter" class="filter__select">
+                            <option value="">Semua Kategori</option>
+                            <option value="tas">Tas & Dompet</option>
+                            <option value="keranjang">Keranjang</option>
+                            <option value="dekorasi">Dekorasi</option>
+                            <option value="penyimpanan">Penyimpanan</option>
+                        </select>
+                        <select id="sortBy" class="filter__select">
+                            <option value="default">Urutkan</option>
+                            <option value="price-low">Harga Terendah</option>
+                            <option value="price-high">Harga Tertinggi</option>
+                            <option value="rating">Rating Tertinggi</option>
+                            <option value="newest">Terbaru</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="products__grid" id="productsGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+            <div class="products__pagination" id="pagination">
+                <!-- Pagination will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="tentang">
+        <div class="container">
+            <div class="about__content">
+                <h2 class="section__title">Tentang Alatacraft</h2>
+                <p class="about__text">
+                    Alatacraft adalah usaha kerajinan tangan yang mengkhususkan diri dalam pembuatan produk berkualitas tinggi dari eceng gondok. 
+                    Kami berkomitmen untuk menciptakan produk yang tidak hanya indah dan fungsional, tetapi juga ramah lingkungan dan mendukung pengrajin lokal.
+                </p>
+                <div class="about__features">
+                    <div class="feature">
+                        <span class="feature__icon">🌱</span>
+                        <h3>Ramah Lingkungan</h3>
+                        <p>Terbuat dari bahan alami eceng gondok yang berkelanjutan</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature__icon">✋</span>
+                        <h3>Buatan Tangan</h3>
+                        <p>Setiap produk dibuat dengan keahlian tangan pengrajin berpengalaman</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature__icon">⭐</span>
+                        <h3>Kualitas Premium</h3>
+                        <p>Kontrol kualitas ketat untuk memastikan produk terbaik</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="kontak">
+        <div class="container">
+            <h2 class="section__title">Hubungi Kami</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <span class="contact__icon">📱</span>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+62 831-1922-6089</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__icon">✉️</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@alatacraft.com</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__icon">📍</span>
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>🌿 Alatacraft</h3>
+                    <p>Kerajinan eceng gondok berkualitas tinggi</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Tautan Cepat</h4>
+                    <a href="#beranda">Beranda</a>
+                    <a href="#produk">Produk</a>
+                    <a href="#tentang">Tentang Kami</a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+                <div class="footer__social">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social__links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Alatacraft. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Wishlist Modal -->
+    <div class="modal" id="wishlistModal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Wishlist Saya</h3>
+                <button class="modal__close" id="closeWishlist">&times;</button>
+            </div>
+            <div class="modal__body" id="wishlistItems">
+                <!-- Wishlist items will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Keranjang Belanja</h3>
+                <button class="modal__close" id="closeCart">&times;</button>
+            </div>
+            <div class="modal__body" id="cartItems">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="modal__footer">
+                <div class="cart__total" id="cartTotal">Total: Rp 0</div>
+                <button class="btn btn--primary" id="checkoutBtn">Lanjut ke Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal__content modal__content--large">
+            <div class="modal__header">
+                <h3>Quick View</h3>
+                <button class="modal__close" id="closeQuickView">&times;</button>
+            </div>
+            <div class="modal__body" id="quickViewContent">
+                <!-- Quick view content will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal__content modal__content--large">
+            <div class="modal__header">
+                <h3>Checkout</h3>
+                <button class="modal__close" id="closeCheckout">&times;</button>
+            </div>
+            <div class="modal__body">
+                <form class="checkout__form" id="checkoutForm">
+                    <div class="form__section">
+                        <h4>Informasi Pelanggan</h4>
+                        <div class="form__group">
+                            <label for="customerName">Nama Lengkap</label>
+                            <input type="text" id="customerName" name="customerName" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="customerPhone">Nomor WhatsApp</label>
+                            <input type="tel" id="customerPhone" name="customerPhone" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="customerEmail">Email</label>
+                            <input type="email" id="customerEmail" name="customerEmail" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form__section">
+                        <h4>Alamat Pengiriman</h4>
+                        <div class="form__group">
+                            <label for="address">Alamat Lengkap</label>
+                            <textarea id="address" name="address" required></textarea>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="city">Kota</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="province">Provinsi</label>
+                                <input type="text" id="province" name="province" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="postalCode">Kode Pos</label>
+                            <input type="text" id="postalCode" name="postalCode" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form__section">
+                        <h4>Metode Pembayaran</h4>
+                        <div class="payment__options">
+                            <label class="payment__option">
+                                <input type="radio" name="paymentMethod" value="transfer" checked>
+                                <span>Transfer Bank Manual</span>
+                            </label>
+                            <label class="payment__option">
+                                <input type="radio" name="paymentMethod" value="ewallet">
+                                <span>E-Wallet (GoPay, OVO, Dana)</span>
+                            </label>
+                            <label class="payment__option">
+                                <input type="radio" name="paymentMethod" value="retail">
+                                <span>Bayar di Gerai (Alfamart, Indomaret)</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="order__summary" id="orderSummary">
+                        <h4>Ringkasan Pesanan</h4>
+                        <!-- Order summary will be displayed here -->
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full">Buat Pesanan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <span id="notificationText"></span>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
